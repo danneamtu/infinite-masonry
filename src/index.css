@@ -1,0 +1,29 @@
+body {
+  margin: 30px 60px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -15px; /* gutter size offset */
+  width: auto;
+}
+.masonry-grid_column {
+  padding-left: 15px; /* gutter size */
+  background-clip: padding-box;
+}
+ 
+/* Style your items */
+.masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+}
+
+.masonry-grid_column img {
+  max-width: 100%;
+  margin-bottom: 15px;
+}
