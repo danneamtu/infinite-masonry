@@ -1,5 +1,5 @@
-# infinite-masonry
-### Learn how to create a React Masonry Layout with Infinite Scroll using Pixabay API
+# React Masonry Layout with Infinite Scroll
+### Create a React Masonry Layout with Infinite Scroll and display images using Pixabay API
 
 #### 1. Create react app
 npx create-react-app ./
@@ -35,7 +35,19 @@ export default API;
 ```
 
 #### 5. Create image.js (functional component)
-Include img structure
+Include image structure
+```JS
+import React from  'react';
+
+const Image = (props) =>{
+    const { tags, webformatURL } = props;
+    return(
+        <img src={webformatURL} alt={tags} />
+    )
+}
+ 
+export default Image;
+```
 
 #### 6. Update App.js file
 Update the App.js file
@@ -89,7 +101,7 @@ function App() {
 export default App;
 ```
 
-#### 7. Add CSS styles
+#### 7. Add basic CSS styles
 ```CSS
 body {
   margin: 30px 60px;
@@ -121,3 +133,9 @@ body {
 
 #### Done
 This is the basic functionality implemented with React Masonry with Infinite Scroller. Enjoy!
+
+#### Useful resources:
+https://www.npmjs.com/package/react-infinite-scroller
+https://www.npmjs.com/package/react-masonry-css
+https://pixabay.com/api/docs/
+https://www.youtube.com/watch?v=ofLc_2mQtT4
